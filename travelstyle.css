@@ -151,7 +151,7 @@
      .services {
         text-align: center;
         padding: 50px;
-        background-image: url('./travelimg/blur.jpg');
+        background-image: url('blur.jpg');
         background-image: cover;
     }
     
@@ -177,7 +177,7 @@
     }
     /*slideshow*/
     .parallax {
-        background: url('./travelimg/indgate.jpg');
+        background: url('indgate.jpg');
         background-size: cover;
         height: 50vh;
         width: 100%;
