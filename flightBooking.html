@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="fkightBooking.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Booking Form</h1>
+        <form id="booking-form">
+            <label for="departure">Departure City:</label>
+            <select id="departure" name="departure" required>
+                <option value="">Select Departure City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            
+            <label for="destination">Destination City:</label>
+            <select id="destination" name="destination" required>
+                <option value="">Select Destination City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            
+            <label for="date">Flight Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Flight Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" required>
+            
+            <button type="submit">Book Flight</button>
+        </form>
+
+        <div id="confirmation" style="display: none;">
+            <h2>Booking Confirmation</h2>
+            <p id="confirmation-details"></p>
+        </div>
+    </div>
+
+<script src="flightBookingjs.js"></script>    
+</body>
+</html>
